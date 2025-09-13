@@ -746,7 +746,7 @@ body {
 
 .icon1 a i {
   color: #ffffff;
-  background: linear-gradient( 150deg, rgba(255, 0, 0, 0.666));
+  background: linear-gradient( 150deg, rgba(255, 0, 0, 0.409));
 }
 
 .social-buttons .icon1 a i:hover {
@@ -755,7 +755,6 @@ body {
 
 .icon2 a i {
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #ff00f2, #bc1888);
-
 }
 
 .social-buttons .icon2 a i:hover {
@@ -1096,7 +1095,7 @@ p {
   transform-origin: bottom;
   transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
   z-index: -1;
-  background-image: linear-gradient(135deg, #7b4397, #dc2430);
+  background-image: linear-gradient(135deg, #ff003c92, #8000ff8e);
 }
 
 .btn-button:hover::before {
