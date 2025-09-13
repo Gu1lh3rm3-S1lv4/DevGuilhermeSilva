@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <title>Desenvolvedor | Gs</title>
+  <meta name="author" content="Guilherme Silva" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--cor da barra de navegação do navegador-->
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="stylesheet" href="css/responsividade.css">
+  <link rel="icon" href="css/img-port/logo.port.png">
+</head>
+
+<body>
+
+  <!--aniumação de fundo do portfolio-->
+  <div class="fundo-animado"></div>
+  <div class="orbita-fundo">
+    <div class="esfera esfera1"></div>
+    <div class="esfera esfera2"></div>
+  </div>
+  <header class="header">
+    <div class="logo-topo">
+      <img src="css/img-port/logo.port.png" alt="logotipo">
+    </div>
+    <div class="menu">
+      <label class="hamburger">
+        <input type="checkbox" id="menuToggle">
+        <svg viewBox="0 0 32 32">
+          <path class="line line-top-bottom"
+            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+          </path>
+          <path class="line" d="M7 16 27 16"></path>
+        </svg>
+      </label>
+    </div>
+    <div class="menu-aberto">
+      <nav class="nav-menu">
+        <a href="#particles-js">INÍCIO</a>
+        <a href="#section-sobre">SOBRE </a>
+        <a href="#projects"> PORTFOLIO</a>
+        <a href="#portfolio"> CONHECIMENTOS</a>
+        <a href="#formulario"> CONTATO</a>
+      </nav>
+    </div>
+  </header>
+  <!--BOTAO DE ROLAGEM PARA O TOPO-->
+  <div id="backToTop" class="fixed-button">
+    <i class="bi bi-chevron-up"></i>
+  </div>
+
+  <!--BOTAO DE REDES SOCIAIS-->
+  <div class="social-container">
+    <button class="btn-social" onclick="toggleMenu()">
+      <i class="bi bi-menu-button-wide"></i>
+
+      <div class="social-buttons">
+        <div class="icon1"><a href="mailto:Guilherme.lsp10@gmail.com"><i class="bi bi-envelope-at"></i></a></div>
+        <div class="icon2"><a href="https://www.instagram.com/guii.syllva/"><i class="bi bi-instagram"></i></a></div>
+        <div class="icon3"><a href="https://github.com/Gu1lh3rm3-S1lv4"><i class="bi bi-github"></i></a></div>
+        <div class="icon4"><a href="https://www.linkedin.com/in/luiz-guilherme-da-silva-pereira-a64793251/"><i
+              class="bi bi-linkedin"></i></a></div>
+        <div class="icon5"><a href="https://wa.me/+5511945224638"><i class="bi bi-whatsapp"></i></a></div>
+      </div>
+    </button>
+  </div>
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <main>
+    <div id="inicio" class="inicio">
+      <div class="txt-inicio">
+        <h1>Guilherme Silva</h1>
+      </div>
+      <div class="txt-efeito">
+        <h2 class="word-rotator">Eu sou&nbsp;</h2>
+      </div>
+    </div>
+  </main>
+
+  <section id="section-sobre" class="sobre">
+    <div class="container-sobre">
+      <div class="txt-sobre">
+        <h2>
+          Sobre</h2>
+      </div>
+      <div class="flex">
+        <div class="box-sobre">
+          <h3>// Minha Jornada()</h3>
+          <p>Desenvolvedor e estudante de Ciência da Computação, entusiasmado com o desenvolvimento de soluções tecnológicas
+            criativas, funcionais e alinhadas às necessidades reais dos usuários. Tenho paixão por programação,
+            tecnologia da informação e desenvolvimento de sistemas, buscando constantemente aprimorar minhas habilidades
+            em um cenário marcado pela inovação e evolução contínua. Acredito no aprendizado contínuo, na troca de
+            experiências e na colaboração como pilares do crescimento profissional. Busco oportunidades que me desafiem
+            a aplicar meus conhecimentos em projetos inovadores, com foco em eficiência, usabilidade e impacto positivo
+            na experiência digital dos usuários.
+          </p>
+        </div>
+
+        <div class="btn-pdf">
+          <a href="css/img-port/Curriculo Guilherme.pdf" Download>
+            <button class="btn-button">BAIXAR CV <i>&#8595;</i></button>
+          </a>
+        </div>
+        <div class="img-sobre">
+          <div class="conteudo-img">
+            <img src="css/img-port/img foto pessoal.png" alt="">
+            <span>💻</span>
+            <h4>Guilherme Silva <br><span>Desenvolvedor</span></h4>
+            <a href="https://wa.me/+5511945224638">Contrate</a>
+          </div>
+        </div>
+
+      </div><!-- fim flex-->
+      <div class="sobre-skills">
+        <div class="softs-skills">
+          <h3>Skills</h3>
+          <nav class="img-softs">
+            <ul class="img-skills" id="bar-skills">
+              <i><img src="css/img-port/icons8-react-24.png" alt=""></i>
+              <i><img src="css/img-port/icons8-html5-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-css-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-git-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-bootstrap-24.png" alt=""></i>
+              <i><img src="css/img-port/icons8-js-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-microsoft-excel-2019-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-microsoft-word-2019-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-mysql-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-c-48.png" alt=""></i>
+              <!--<i><img src="css/img-port/icons8-angular-48.png" alt=""></i>-->
+              <!--<i><img src="css/img-port/icons8-nodejs-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-github-50.png" alt=""></i>
+              <!--<i><img src="css/img-port/icons8-nextjs-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-tailwindcss-48.png" alt=""></i>
+            </ul>
+          </nav>
+        </div>
+        <div class="softs-2">
+          <h3>Front-End</h3>
+          <nav class="img-2">
+            <ul class="img-12" id="bar">
+              <i title="React"><img src="css/img-port/icons8-tailwindcss-48.png" alt=""></i>
+              <!-- <i title="React"><img src="css/img-port/icons8-nextjs-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-html5-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-css-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-bootstrap-24.png" alt=""></i>
+            </ul>
+          </nav>
+        </div>
+        <div class="softs-p3">
+          <h3>Back-End</h3>
+          <nav class="img-p3">
+            <ul class="img-p13" id="bar-pt3">
+              <i><img src="css/img-port/icons8-react-24.png" alt=""></i>
+              <i><img src="css/img-port/icons8-js-48.png" alt=""></i>
+              <!--<i><img src="css/img-port/icons8-nodejs-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-c-48.png" alt=""></i>
+              <!-- <i><img src="css/img-port/icons8-angular-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-c-47.png" alt=""></i>
+            </ul>
+          </nav>
+        </div>
+        <div class="softs-p4">
+          <h3>Frameworks</h3>
+          <nav class="img-p4">
+            <ul class="img-p14" id="bar-pt4">
+              <i><img src="css/img-port/icons8-git-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-microsoft-excel-2019-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-microsoft-word-2019-48.png" alt=""></i>
+              <i><img src="css/img-port/icons8-mysql-48.png" alt=""></i>
+              <!--<i><img src="css/img-port/icons8-angular-48.png" alt=""></i>-->
+              <!--<i><img src="css/img-port/icons8-docker-48.png" alt=""></i>-->
+              <i><img src="css/img-port/icons8-github-50.png" alt=""></i>
+              <i><img src="css/img-port/icons8-tailwindcss-48.png" alt=""></i>
+
+            </ul>
+          </nav>
+        </div>
+      </div><!-- fim sobre-skills-->
+    </div><!-- fim container-sobre-->
+
+  </section>
+
+  <section id="projects" class="projectSection">
+    <div class="outerSectionDiv">
+      <h2 class="projectTitle"> Projetos</h2>
+      <div class="Container-projetos">
+        <div class="projectCard" id="project1">
+
+          <div class="projectNumber rightNumber">01</div>
+          <div class="projectContent leftProjectContent">
+            <div class="projectSkillsContainer">
+              <img class="projectSkill" src="/stack/HTML.png" alt="" />
+              <img class="projectSkill" src="/stack/CSS.png" alt="" />
+              <img class="projectSkill" src="/stack/Javascript.svg" alt="" />
+              <!-- <img class="projectSkill" src="/stack/Express.png" alt="" /> -->
+              <!-- <img class="projectSkill" src="/stack/NextJsCircle.png" alt="" /> -->
+              <img class="projectSkill" src="/stack/Tailwind.png" alt="" />
+              <!-- <img class="projectSkill" src="/stack/NodeJs.svg" alt="" /> -->
+              <!-- <img class="projectSkill" src="/stack/MongoDB.svg" alt="" /> -->
+              <!-- <img class="projectSkill" src="/stack/Redux.svg" alt="" /> -->
+              <img class="projectSkill" src="/stack/Vercel.svg" alt="" />
+            </div>
+            <h2 class="projectHeading">Desenvolvimento Saas</h2>
+            <p class="projectSubHeading">
+              Este projeto é uma aplicação SaaS desenvolvida como parte dos meus estudos em Ciência da Computação. A
+              plataforma oferece [serviço X — ex: gestão de tarefas, controle financeiro, agendamentos online], com foco
+              em simplicidade, escalabilidade e experiência do usuário.
+            </p>
+            <div class="btnGroup">
+              <a href="pagina 1.html">
+                <button class="projectBtn">Saiba Mais</button>
+              </a>
+              <a href="https://github.com/AayushBharti/Razorpay-clone" class="github" target="_blank">
+                <i title="GitHub Link" class="fa-brands fa-github icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="projectCard" id="project2">
+          <div class="projectNumber leftNumber">02</div>
+          <div class="projectContent rightProjectContent">
+            <div class="projectSkillsContainer">
+              <img class="projectSkill" src="/stack/HTML.png" alt="" />
+              <img class="projectSkill" src="/stack/CSS.png" alt="" />
+              <img class="projectSkill" src="/stack/Javascript.svg" alt="" />
+              <!-- <img class="projectSkill" src="/stack/NextJsCircle.png" alt="" /> -->
+              <img class="projectSkill" src="/stack/Tailwind.png" alt="" />
+
+              <!-- <img class="projectSkill" src="/stack/Redux.svg" alt="" /> -->
+              <img class="projectSkill" src="/stack/Vercel.svg" alt="" />
+            </div>
+            <h2 class="projectHeading">Portfólio e Site pessoal</h2>
+            <p class="projectSubHeading">
+              Criação de portfólios personalizados, desenvolvidos para destacar de forma
+              profissional os projetos, habilidades e a identidade de cada pessoa. Utilizo design responsivo para
+              garantir uma boa visualização em qualquer dispositivo, além de focar na usabilidade e na organização das
+              informações. Meu objetivo é criar portfólios que não só impressionem visualmente, mas também facilitem a
+              navegação e a comunicação clara do conteúdo.
+            </p>
+            <div class="btnGroup">
+              <a href="pagina 2.html">
+                <button class="projectBtn">Saiba Mais</button>
+              </a>
+              <a href="https://github.com/AayushBharti/Discord-clone" class="github" target="_blank">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projectCard" id="project3">
+          <div class="projectNumber rightNumber">03</div>
+          <div class="projectContent leftProjectContent">
+            <div class="projectSkillsContainer">
+              <img class="projectSkill" src="/stack/HTML.png" alt="" />
+              <img class="projectSkill" src="/stack/CSS.png" alt="" />
+              <img class="projectSkill" src="/stack/Javascript.svg" alt="" />
+              <!-- <img class="projectSkill" src="/stack/Express.png" alt="" /> -->
+              <!-- <img class="projectSkill" src="/stack/NextJsCircle.png" alt="" /> -->
+              <img class="projectSkill" src="/stack/Vercel.svg" alt="" />
+            </div>
+            <h2 class="projectHeading">Sistema de E-commerce</h2>
+            <p class="projectSubHeading">
+              Desenvolvi esta loja virtual do zero, aplicando meus conhecimentos em front-end e back-end. Fui
+              responsável por todo o processo de criação: desde o layout responsivo e intuitivo até as funcionalidades
+              como carrinho de compras, login de usuário e simulação de pagamentos. O projeto foi feito com foco na
+              usabilidade e na performance, utilizando tecnologias modernas para garantir uma ótima experiência ao
+              usuário.
+            </p>
+            <div class="btnGroup">
+              <a href="pagina 3.html">
+                <button class="projectBtn">Saiba Mais</button>
+              </a>
+              <a href="https://github.com/AayushBharti/Password-Generator" class="github" target="_blank">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="projectCard" id="project4">
+          <div class="projectNumber leftNumber">04</div>
+          <div class="projectContent rightProjectContent">
+            <div class="projectSkillsContainer">
+              <img class="projectSkill" src="/stack/NextJsCircle.png" alt="" />
+              <img class="projectSkill" src="/stack/Tailwind.png" alt="" />
+
+              <img class="projectSkill" src="/stack/Vercel.svg" alt="" />
+            </div>
+            <h2 class="projectHeading">Sistemas de Aplicações</h2>
+            <p class="projectSubHeading">
+              Desenvolvo programas personalizados, incluindo automatizações, sistemas de
+              controle de estoque e gestão de pedidos. Crio soluções práticas e eficientes que atendem às necessidades
+              específicas dos clientes, facilitando o gerenciamento de processos e otimizando operações. Meu foco está
+              em entregar aplicações intuitivas, confiáveis e adaptáveis, que agregam valor e simplificam o dia a dia
+              dos usuários.
+            <div class="btnGroup">
+              <a href="pagina 4.html">
+                <button class="projectBtn">Saiba Mais</button>
+              </a>
+              <a href="" class="github" target="_blank">
+                <i title="GitHubLink" class="fa-brands fa-github icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <div class="container-portfolio">
+      <div class="txt-portfolio">
+        <h1>
+          Conhecimentos</h1>
+      </div>
+      <div class="flex-portfolio">
+        <div class="card">
+          <img src="css/img-port/foto site hdmr ar.png" alt="Imagem do projeto">
+          <div class="card-content">
+            <h2>Arquitetura e Desenvolvimento de Sistemas SaaS</h2>
+            <p>Como desenvolvedor, atuo no planejamento, construção e manutenção de sistemas SaaS (Software as a
+              Service), com foco em escalabilidade, segurança e performance. Trabalho desde a definição da arquitetura
+              da aplicação até a implementação de APIs, autenticação, gerenciamento multiusuário, integrações e
+              interfaces responsivas. Meu objetivo é transformar ideias em soluções digitais eficientes, acessíveis via
+              web e adaptadas às necessidades dos usuários finais.</p>
+            <!--<a href="https://github.com/Gu1lh3rm3-S1lv4/Maintenance-store">Demonstração ao vivo</a>-->
+            <button class="btn-serv"><a href="#formulario">Solicitar &rarr;</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="css/img-port/pexels-pixabay-39284.jpg" alt="Imagem do projeto">
+          <div class="card-content">
+            <h2>Site e Portfólio Profissional</h2>
+            <p>Este espaço reúne meus projetos como desenvolvedor e conteúdos sobre tecnologia, desenvolvimento web e
+              boas práticas de programação. No portfólio, apresento sistemas, aplicações e soluções que desenvolvi, com
+              foco em performance, usabilidade e arquitetura limpa. Já no blog, compartilho aprendizados, experiências
+              do dia a dia e dicas úteis para quem também vive o universo da tecnologia. É onde mostro, na prática, como
+              aplico conhecimento para criar produtos digitais de qualidade.</p>
+            <!--<a href="https://github.com/Gu1lh3rm3-S1lv4/Loja-On">Demonstração ao vivo</a>-->
+            <button class="btn-serv"><a href="#formulario">Solicitar &rarr;</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="css/img-port/foto do site loja online.png" alt="Imagem do projeto">
+          <div class="card-content">
+            <h2>E-commerce: Performance, Integração e UX</h2>
+            <p>Como desenvolvedor full stack, crio plataforma de e-commerce completa, focada em alta performance,
+              integração com múltiplos serviços e uma experiência de usuário intuitiva. Desde o backend robusto, com
+              gestão eficiente de produtos, pedidos e pagamentos, até um frontend responsivo e acessível, meu objetivo
+              foi construir uma solução escalável e que ofereça uma navegação fluida e segura para os clientes.</p>
+            <!--<a href="https://github.com/Gu1lh3rm3-S1lv4/Nar">Demonstração ao vivo</a>-->
+            <button class="btn-serv"><a href="#formulario">Solicitar &rarr;</a></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="css/img-port/pexels-negativespace-97077.jpg" alt="Imagem do projeto">
+          <div class="card-content">
+            <h2>Soluções Digitais: Sistemas e Aplicações</h2>
+            <p>Como desenvolvedor, atuo na criação de sistemas e aplicações personalizadas que atendem às necessidades
+              específicas de cada cliente. Minha abordagem combina eficiência, escalabilidade e usabilidade, garantindo
+              que cada solução entregue seja funcional, segura e alinhada aos objetivos do negócio. Trabalho com
+              tecnologias modernas para transformar ideias em produtos digitais que facilitam processos e impulsionam
+              resultados.</p>
+            <!--<a href="https://github.com/Gu1lh3rm3-S1lv4/Site-Adv">Demonstração ao vivo</a>-->
+            <button class="btn-serv"><a href="#formulario">Solicitar &rarr;</a></button>
+          </div>
+        </div>
+      </div><!--fim flex-portfolio-->
+    </div><!--fim container-portfolio-->
+  </section>
+
+
+  <section class="formulario" id="formulario">
+    <div class="container-contato">
+      <div class="flex">
+        <div class="conteudo-form">
+          <h2>
+            Contato
+          </h2>
+          <p>
+            Tem um projeto em mente ou precisa de uma solução digital? Entre em contato e vamos conversar!
+          </p>
+          <div class="complemento-form">
+          </div>
+          <form class="form" action="" method="post" autocomplete="off">
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required autocomplete="">
+            <input type="phone" name="telefone" id="telefone" placeholder="Seu numero" required autocomplete="">
+            <input type="text" name="email" id="email" placeholder="seu e-mail" required autocomplete="">
+            <textarea name="mensagem" id="mensagem" placeholder="Descreva sua mensagem aqui..." required
+              autocomplete=""></textarea>
+            <button class="btn-form"> Enviar</button>
+          </form>
+          <div class="social-section">
+            <h3>Conecte-se comigo</h3>
+
+            <a href="https://www.linkedin.com/in/luiz-guilherme-da-silva-pereira-a64793251/" class="social-btn"
+              target="_blank">
+              <span class="icon"> <!-- Ícone SVG LinkedIn simplificado -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7 0h5v2.56c.7-1.3 2.4-2.56 4.8-2.56 5.12 0 6 3.36 6 7.72V24h-5v-7c0-1.6-.03-3.68-2.4-3.68-2.4 0-2.76 1.88-2.76 3.56V24H7V8z" />
+                </svg></span>
+              <span class="text">Vamos se Conectar</span>
+            </a>
+
+            <a href="https://www.instagram.com/guii.syllva/" class="social-btn" target="_blank">
+              <span class="icon"> <!-- Ícone SVG LinkedIn simplificado -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.88 2.13a1.12 1.12 0 110 2.25 1.12 1.12 0 010-2.25zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" />
+                </svg>
+              </span>
+              <span class="text">Vamos se Conectar</span>
+            </a>
+
+            <a href="https://github.com/Gu1lh3rm3-S1lv4" class="social-btn" target="_blank">
+              <span class="icon"> <!-- Ícone SVG LinkedIn simplificado -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 0.297C5.372 0.297 0 5.67 0 12.297c0 5.28 3.438 9.75 8.207 11.325.6.111.793-.261.793-.577 0-.285-.012-1.237-.017-2.244-3.338.724-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.832 2.807 1.303 3.492.997.108-.776.418-1.303.76-1.602-2.665-.305-5.466-1.333-5.466-5.93 0-1.31.467-2.382 1.235-3.22-.123-.304-.535-1.527.117-3.176 0 0 1.008-.322 3.3 1.23a11.45 11.45 0 013.003-.403c1.02.005 2.045.138 3.003.403 2.29-1.552 3.296-1.23 3.296-1.23.654 1.649.242 2.872.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.805 5.624-5.475 5.92.43.372.823 1.104.823 2.222 0 1.604-.015 2.898-.015 3.293 0 .319.192.694.8.576C20.565 22.043 24 17.573 24 12.297 24 5.67 18.627 0.297 12 0.297z" />
+                </svg>
+              </span>
+              <span class="text"> Vamos se Conectar</span>
+            </a>
+          </div><!--fim social-section-->
+        </div><!--fim conteudo-form-->
+      </div><!--fim flex-->
+    </div><!--fim container-contato-->
+  </section>
+
+  <footer class="footer">
+    <div class="container-footer">
+      <div class="txt-footer">
+        <p>&copy; 2025 Todos os direitos reservados.</p>
+        <p>Desenvolvido por GS│Dev.</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- scripts -->
+  <script src="../particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/backtotop.js"></script>
+  <script src="js/rolagemx.js"></script>
+  <script src="js/btnSocial.js"></script>
+  <script src="js/effectPalavra.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/efffectSkills.js"></script>
+</body>
+
+</html>
