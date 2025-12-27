@@ -1,25 +1,33 @@
 {
   "name": "meu-portfolio",
-  "version": "1.0.0",
-  "description": "Minha aplicaçao web de portfólio pessoal sobre minhas softs skills",
+  "version": "1.0.1",
+  "description": "Minha aplicaçao web de portfólio pessoal sobre minhas softs skills e hard skills",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "live-server",
+    "start": "live-server",
+    "format": "prettier --write \"**/*.{html,css,js,json}\""
+  },
+  "author": "Guilherme Silva",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Gu1lh3rm3-S1lv4/DevGuilhermeSilva.git"
   },
-  "dependencies": {
-    "particles.js": "^2.0.0"
-  },
   "LICENSE-PARTICLES.txt": "MIT",
   "keywords": [
-    "canvas"
+    "portfolio",
+    "curriculo",
+    "desenvolvedor",
+    "front-end",
+    "html-css-js"
   ],
-  "author": "Guilherme Silva",
-  "license": "GPL",
   "bugs": {
     "url": "https://github.com/Gu1lh3rm3-S1lv4/DevGuilhermeSilva/issues"
   },
