@@ -526,7 +526,6 @@ body {
   left: 50%;
   /*centraliza*/
   transform: translate(-50%, -50%);
-
 }
 
 .inicio h1 {
@@ -536,6 +535,22 @@ body {
   -webkit-text-fill-color: transparent;
   font-size: 5rem;
   overflow: hidden;
+  /* Linha do cursor */
+  white-space: nowrap;
+  /* Impede quebra de linha */
+  width: 100%;
+  /* Começa com largura ;*/
+}
+
+
+/* Container do rotador de palavras */
+.txt-efeito {
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgba(200, 80, 192, 0.547) 46%, rgb(255, 204, 112) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  overflow: hidden;
   /* Esconde o texto que ainda não apareceu */
   border-right: .15em solid #892be2;
   /* Linha do cursor */
@@ -543,6 +558,7 @@ body {
   /* Impede quebra de linha */
   width: 0;
   /* Começa com largura 0 */
+ margin-top: 10px;
   animation: typing 4s steps(30, end)infinite, blink .9s step-end infinite;
 }
 
@@ -553,12 +569,13 @@ body {
   }
 
   75% {
-    width: 100%;
+    width: 85%;
+    
   }
 
   /**DA UMA PAUSA AO FIM DA EXECUÇÃO*/
   100% {
-    width: 100%;
+    width: 85%;
   }
 }
 
@@ -566,70 +583,6 @@ body {
 @keyframes blink {
   50% {
     border-color: transparent;
-  }
-}
-
-
-/* Container do rotador de palavras */
-.word-rotator {
-  font-size: 3.5rem;
-  /* Tamanho da fonte */
-  height: 50px;
-  /* Altura do container */
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgba(200, 80, 192, 0.547) 46%, rgb(255, 204, 112) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* Cor do texto */
-  position: absolute;
-  /* Sobreposto ao conteúdo */
-  margin-top: 40px;
-  /* Espaço do topo */
-}
-
-/* Palavras individuais que rotacionam */
-.word-rotator span {
-  position: absolute;
-  /* Sobrepõe umas às outras */
-  width: 200%;
-  /* Largura total */
-  opacity: 0;
-  /* Invisível inicialmente */
-  animation: rotateWords linear infinite;
-  /* Animação contínua */
-  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgba(200, 80, 192, 0.547) 46%, rgb(255, 204, 112) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-top: 5px;
-}
-
-/* Animação de rotação das palavras */
-@keyframes rotateWords {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-    /* Inicia vindo de baixo */
-  }
-
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-    /* Aparece na posição normal */
-  }
-
-  25% {
-    opacity: 1;
-    transform: translateY(0);
-    /* Permanece visível */
-  }
-
-  35% {
-    opacity: 0;
-    transform: translateY(-100%);
-    /* Sai por cima */
-  }
-
-  100% {
-    opacity: 0;
   }
 }
 
