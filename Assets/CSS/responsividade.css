@@ -120,21 +120,9 @@
 
   }
 
-  .softs-skills {
-    max-width: 290px;
-    height: 130px;
-  }
-
-  .softs-2 {
-    max-width: 290px;
-    height: 130px;
-  }
-
-  .softs-p3 {
-    max-width: 290px;
-    height: 130px;
-  }
-
+  .softs-skills,
+  .softs-2,
+  .softs-p3,
   .softs-p4 {
     max-width: 290px;
     height: 130px;
@@ -847,7 +835,7 @@
 
 }
 
-/* ========== CSS RESPONSIVO ========== */
+/** ========== CSS RESPONSIVO ========== */
 @media (max-width: 1024px) {
   * {
     margin: 0;
@@ -898,6 +886,11 @@
   .inicio h1 {
     font-size: 2.5rem;
     white-space: nowrap;
+  }
+
+  .inicio h2 {
+    font-size: 1.8rem;
+    width: 100%;
   }
 
   .word-rotator {
@@ -1025,21 +1018,11 @@
     margin: 0 auto;
   }
 
-  .softs-skills {
-    height: 100px;
-  }
-
-  .softs-2 {
-    height: 100px;
-  }
-
-  .softs-p3 {
-    height: 100px;
-  }
-
+  .softs-skills,
+  .softs-2,
+  .softs-p3,
   .softs-p4 {
     height: 100px;
-
   }
 
   .img-softs {

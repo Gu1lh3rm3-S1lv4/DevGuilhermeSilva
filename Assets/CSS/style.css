@@ -1057,6 +1057,9 @@ p {
   max-width: 400px;
   padding: 1rem;
   gap: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  transition: box-shadow 0.3s ease;
 }
 
 .softs-skills:hover {
@@ -1950,4 +1953,14 @@ textarea {
 .txt-footer p {
   color: #7700ff;
   text-align: center;
+}
+
+/* Classe utilitária global para animações */
+.show {
+  opacity: 1;
+  /* Torna o elemento visível */
+  filter: blur(0);
+  /* Remove o desfoque */
+  transform: translateX(0);
+  /* Move o elemento para sua posição original */
 }
