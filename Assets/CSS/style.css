@@ -558,7 +558,7 @@ body {
   /* Impede quebra de linha */
   width: 0;
   /* Começa com largura 0 */
- margin-top: 10px;
+  margin-top: 10px;
   animation: typing 4s steps(30, end)infinite, blink .9s step-end infinite;
 }
 
@@ -570,7 +570,7 @@ body {
 
   75% {
     width: 85%;
-    
+
   }
 
   /**DA UMA PAUSA AO FIM DA EXECUÇÃO*/
@@ -597,8 +597,8 @@ body {
 }
 
 .btn-social {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: linear-gradient(135deg, #ffffff00, #00f2ff00);
   border: none;
   border-radius: 50px;
@@ -615,11 +615,10 @@ body {
   background: linear-gradient(135deg, #ff000091, #6a00ff8d);
   box-shadow: 0px 0px 10px #6a00ff8d;
   transition: all .3s ease-in-out;
-  transform: scale(1.1);
 }
 
 .btn-social i {
-  font-size: 24px;
+  font-size: 20px;
   width: 24px;
   color: rgb(255, 255, 255);
 }
@@ -636,8 +635,8 @@ body {
 }
 
 .social-buttons a i {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 25px;
   border-radius: 50px;
   display: flex;
@@ -659,10 +658,6 @@ body {
 
 }
 
-.social-buttons i:hover {
-  transform: scale(1.1);
-}
-
 .icon1 a i {
   color: #ffffff;
   background: linear-gradient(150deg, rgba(255, 0, 0, 0.409));
@@ -670,6 +665,8 @@ body {
 
 .social-buttons .icon1 a i:hover {
   box-shadow: 0px 0px 10px rgb(255, 0, 0);
+  transform: scale(1.1);
+
 }
 
 .icon2 a i {
@@ -678,6 +675,8 @@ body {
 
 .social-buttons .icon2 a i:hover {
   box-shadow: 0px 0px 10px rgb(255, 0, 0);
+  transform: scale(1.1);
+
 }
 
 .icon3 a i {
@@ -686,6 +685,9 @@ body {
 
 .social-buttons .icon3 a i:hover {
   box-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+  transform: scale(1.1);
+
 }
 
 .icon4 a i {
@@ -694,6 +696,8 @@ body {
 
 .social-buttons .icon4 a i:hover {
   box-shadow: 0px 0px 10px rgb(0, 157, 255);
+  transform: scale(1.1);
+
 }
 
 .icon5 a i {
@@ -702,6 +706,8 @@ body {
 
 .social-buttons .icon5 a i:hover {
   box-shadow: 0px 0px 10px rgb(0, 255, 47);
+  transform: scale(1.1);
+
 }
 
 .social-container.active .social-buttons {
@@ -715,8 +721,8 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   background-color: var(--color-white);
   color: var(--color-black);
